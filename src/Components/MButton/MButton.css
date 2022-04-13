@@ -1,0 +1,227 @@
+/* --- --- --- COLORS --- --- --- */
+/* PRIMARY */
+/* HOVER */
+/* PRESSED */
+/* DISABLED */
+/* --- --- --- COLORS --- --- --- */
+
+/* --- --- --- DEFAULT STYLING --- --- --- */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.disabled {
+    color: #fff;
+    background-color: #CED4DA;
+    border-color: #CED4DA;
+    cursor: not-allowed;
+}
+
+.loading {
+    color: #fff;
+    background-color: #CED4DA;
+    border-color: #CED4DA;
+    cursor: progress;
+}
+/* --- --- --- DEFAULT STYLING --- --- --- */
+
+/* --- --- --- COLOR BASED STYLING --- --- ---  */
+
+.primary {
+    color: #fff;
+    background-color: #4D96FF;
+    border-color: #4D96FF;
+}
+
+.primary:hover {
+    color: #fff;
+    background-color: #4D77FF;
+    border-color: #4D77FF;
+}
+
+.secondary {
+    color: #fff;
+    background-color: #6998AB;
+    border-color: #6998AB;
+}
+
+.secondary:hover {
+    color: #fff;
+    background-color: #406882;
+    border-color: #406882;
+}
+
+.success {
+    color: #fff;
+    background-color: #2FDD92;
+    border-color: #2FDD92;
+}
+
+.success:hover {
+    color: #fff;
+    background-color: #34BE82;
+    border-color: #34BE82;
+}
+
+.danger {
+    color: #fff;
+    background-color: #FF5151;
+    border-color: #FF5151;
+}
+
+.danger:hover {
+    color: #fff;
+    background-color: #EC255A;
+    border-color: #EC255A;
+}
+
+.warning {
+    color: #212529;
+    background-color: #FBF46D;
+    border-color: #FBF46D;
+}
+
+.warning:hover {
+    color: #212529;
+    background-color: #FEE440;
+    border-color: #FEE440;
+}
+
+.info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.info:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.light {
+    color: #212529;
+    background-color: #CAF0F8;
+    border-color: #CAF0F8;
+}
+
+.light:hover {
+    color: #212529;
+    background-color: #90E0EF;
+    border-color: #90E0EF;
+}
+
+.light:focus {
+    color: #fff;
+    background-color: #00B4D8;
+    border-color: #00B4D8;
+}
+
+.dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.dark:hover {
+    color: #fff;
+    background-color: #1d2124;
+    border-color: #171a1d;
+}
+
+.link {
+    color: #0062cc;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.outline-primary {
+    color: #4D96FF;
+    background-color: transparent;
+    border-color: #4D96FF;
+}
+
+/* --- --- --- COLOR BASED STYLING --- --- ---  */
+
+
+/* --- --- --- SIZE BASED STYLING --- --- ---  */
+
+.small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.medium {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.large {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.submit {
+    width: 100%;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* --- --- --- SIZE BASED STYLING --- --- ---  */
+
+/* --- --- --- LOADING ANIMATION --- --- --- */
+
+.loading__dot {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: loading__dots 1.5s linear infinite;
+}
+
+.dot2 {
+    animation-delay: 0.2s;
+}
+
+.dot3 {
+    animation-delay: 0.4s;
+}
+
+@keyframes loading__dots {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* --- --- --- LOADING ANIMATION --- --- --- */

@@ -1,0 +1,3 @@
+export const SET_WEATHER_DATA = 'SET_WEATHER_DATA'
+export const SET_IS_FETCHING = 'SET_IS_FETCHING'
+export const SET_CITY_NAME = 'SET_CITY_NAME'
