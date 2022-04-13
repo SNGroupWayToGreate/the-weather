@@ -5,6 +5,8 @@ import './Main.css'
 
 export default function Main() {
 	const weather = useSelector(state => state.weather.weatherData)
+	const weatherIconSrc=Object.keys(weather).length && weather?.weather[0]?.icon
+	const weatherDescription=Object.keys(weather).length && weather?.weather[0]?.description
 
 	return (
 		<main className='main'>
@@ -24,19 +26,19 @@ export default function Main() {
 						<sup>{weather?.sys?.country}</sup>
 					</div>
 					<div className="main__date">
-						Clear cky
+					
 					</div>
 				</div>
 				<div className="main__details">
 					<div className="main__icon">
-						<img src='' />
+						<img src={` http://openweathermap.org/img/wn/${weatherIconSrc}.png`} />
 					</div>
 					<div className="main__weather">
-						Clear cky
+						{weatherDescription}
 					</div>
 				</div>
 			</div>
-			<Banner main={weather && weather?.weather[0]?.main} />
+			<Banner main={Object.keys(weather).length && weather?.weather[0]?.main} />
 		</main>
 	)
 }
