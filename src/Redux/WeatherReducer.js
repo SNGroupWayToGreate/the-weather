@@ -1,13 +1,5 @@
 import { setIsFetching, setWeatherData } from "./action"
 import { SET_CITY_NAME, SET_IS_FETCHING, SET_WEATHER_DATA } from "./types"
-///////////////////////////////////////////////////////////////////////////////////
-import clouds from '../images/cloudy_sky.jpg'
-import clear from '../images/clear_sky.jpg'
-import rain from '../images/rain.jpg'
-import thunderstorm from '../images/thunderstorm.jpg'
-import snow from '../images/snow.jpg'
-import drizzle from '../images/drizzle.jpg'
-import haze from '../images/haze.jpg'
 import getData from '../Api/Api'
 
 
@@ -21,23 +13,22 @@ const initialState = {
 		{ id: "5", city: 'Termiz' },
 		{ id: "6", city: 'Guliston' },
 		{ id: "7", city: 'Qarshi' },
-		{ id: "8", city: 'Termiz' }, 
+		{ id: "8", city: 'Termiz' },
 		{ id: "9", city: 'Andijan' },
 		{ id: "10", city: 'Namangan' },
 		{ id: "11", city: 'Fergana' },
 		{ id: "12", city: 'Nukus' },
 	],
-	weatherImages : {
-		Clouds: clouds,
-		Clear: clear,
-		Rain: rain,
-		Thunderstorm: thunderstorm,
-		Snow: snow,
-		Drizzle: drizzle,
-		Haze: haze
+	weatherImages: {
+		Clouds: '#c0c0c0',
+		Clear: '#87cbde',
+		Rain: '#344583',
+		Thunderstorm: '#С9В3В8',
+		Snow: '#202223',
+		Drizzle: '#С9В3В8',
+		Haze: '#D5D0D4'
 	},
 	cityName: '',
-	//description: this.weatherData?.weather[0].description,
 	isFetching: false
 
 }
