@@ -1,0 +1,24 @@
+.eside__serch{	
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: end;
+	}
+
+.eside__input input{
+letter-spacing: 1px;
+	border-bottom: 1px solid lightgray;
+padding: 10px 0;
+background: none;
+font-size: 14px;
+	line-height: calc(26/24*100%);
+color: #ffff;
+}
+.eside__button {
+}
+.eside__button button{
+	width: 150px;
+	height: 50px;
+	background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

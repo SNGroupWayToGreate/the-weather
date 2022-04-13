@@ -1,0 +1,41 @@
+.eside__regions{
+	padding: 10px 0;
+border-bottom: 1px solid lightgrey;
+}
+@media(max-width:970px){
+.eside__list{
+	display: grid;
+	row-gap: 10px;
+	column-gap: 20px;
+	grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+}
+.eside__region{	
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: left;
+	color: whitesmoke;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	padding: 5px 0;
+border-radius: 5px;
+background: none;
+transition: all 0.3s linear;
+}
+.eside__region:not(:last-child){	
+	margin-bottom: 5px;
+}
+.eside__region:hover{
+	padding-left: 30%;	
+	background: rgba(128,128,128,0.4);
+}
+@media(max-width:767px){
+	.eside__region:hover{
+		padding-left: 10px;	
+		background: rgba(128,128,128,0.4);
+	}
+}
+.eside__region:active{
+	position: relative;
+	top: 2px;
+}

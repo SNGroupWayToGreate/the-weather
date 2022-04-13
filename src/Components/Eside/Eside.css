@@ -1,0 +1,18 @@
+.eside{
+	padding: 0px 0 40px  40px;
+	background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.eside__content{
+
+}
+
+@media(max-width:767px){
+	.eside__button button{
+		width: 100px;
+	}
+}
+.eside__body{
+	padding-right: 40px;
+}
